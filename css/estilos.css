@@ -25,7 +25,7 @@
   }
 a:link, a:visited { 
     text-decoration: none;
-    color: white;
+    color: #FFF;
   }
   a:hover{
     color: #a4f479;
@@ -44,7 +44,7 @@ a:link, a:visited {
     font-family: Fira Sans, sans-serif;
     font-weight: 500;
     font-size: 20px;
-    color: white;
+    color: #FFF;
 }
 .index__navbar--list{
     display: flex;
@@ -57,7 +57,7 @@ a:link, a:visited {
     margin: 7vh 33% 15px 33%;
 }
 .ampedFestival__slogan{
-    color: white;
+    color: #FFF;
     font-family: Fira Sans, sans-serif;
     font-weight: 900;
     font-size: 80px;
