@@ -23,7 +23,103 @@
         </ul>
       </nav>
     </header>
-    <main></main>
+    <main id="main">
+      <h1>Compra tus entradas</h1>
+      <p>
+        Ser parte del Amped Festival es una experiencia que no querrás perderte.
+        Ya sea que desees estar en primera fila o disfrutar del ambiente desde
+        un espacio VIP, tenemos diferentes tipos de entradas para satisfacer tus
+        necesidades. Completa el formulario a continuación para asegurarte de
+        estar presente en este evento musical inigualable.
+      </p>
+      <form action="">
+        <fieldset>
+          <legend>Información Personal</legend>
+          <label for=""
+            >Nombre:
+            <input type="text" />
+          </label>
+          <label for=""
+            >Apellidos:
+            <input type="text" />
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>Tipo de Entrada</legend>
+          <p>
+            Elige el tipo de entrada que prefieres para tu experiencia en el
+            Amped Festival. Cada opción ha sido diseñada para proporcionarte el
+            mejor acceso y comodidades durante el evento.
+          </p>
+          <label for="tickets"
+            >Selecciona tu Entrada:
+            <select name="tickets" id="tickets">
+              <option value="generalTicket">Entrada General - 50€</option>
+              <option value="vipTicket">
+                Entrada VIP - 150€ (incluye acceso backstage y zona
+                preferencial)
+              </option>
+              <option value="twoDaysTicket">Pase de dos Días - 120€</option>
+            </select>
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>Método de Pago</legend>
+          <label for="">
+            <input type="radio" />
+            Paypal
+            <input type="radio" />
+            Tarjeta de Crédito
+            <input type="radio" />Bizum
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>Información de Tarjeta</legend>
+          <label for=""
+            >Número de tarjeta de crédito/débito:
+            <input type="text" placeholder="1234123412341234" />
+          </label>
+          <label for=""
+            >Fecha de Expiración:
+            <input type="text" />
+          </label>
+          <label for=""
+            >CVC:
+            <input type="text" placeholder="123" />
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>Dirección de Envío</legend>
+          <label for=""
+            >Dirección: *
+            <input type="text" name="" id="" placeholder="Dirección" />
+          </label>
+          <label for=""
+            >Población: *
+            <input type="text" name="" id="" placeholder="Población" />
+          </label>
+          <label for=""
+            >País:
+            <select name="country" id="country">
+              <option value="Spain">España</option>
+            </select>
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>Comentarios o Peticiones Especiales</legend>
+          <textarea cols="134" rows="5"></textarea>
+        </fieldset>
+        <fieldset>
+          <legend>Términos y condiciones y la política de privacidad</legend>
+          <label for="">
+            <input type="checkbox" name="" id="" />He leído y acepto los
+            <a href="">términos y condiciones</a> y la
+            <a href="">política de privacidad.</a>
+          </label>
+        </fieldset>
+        <button type="submit">Comprar Entrada</button>
+      </form>
+    </main>
     <footer id="footer">
       <ul class="footer__list">
         <li><a href="">Aviso legal</a></li>
