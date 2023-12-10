@@ -25,7 +25,7 @@
     </header>
     <main id="main">
       <h1>Compra tus entradas</h1>
-      <p>
+      <p class="main__text">
         Ser parte del Amped Festival es una experiencia que no querrás perderte.
         Ya sea que desees estar en primera fila o disfrutar del ambiente desde
         un espacio VIP, tenemos diferentes tipos de entradas para satisfacer tus
@@ -33,91 +33,154 @@
         estar presente en este evento musical inigualable.
       </p>
       <form action="">
-        <fieldset>
+        <fieldset class="tickets__form--fieldset">
           <legend>Información Personal</legend>
-          <label for=""
-            >Nombre:
-            <input type="text" />
-          </label>
-          <label for=""
-            >Apellidos:
-            <input type="text" />
-          </label>
+          <div>
+            <label class="tickets__form--nombreCampo" for="nombre"
+              >Nombre: *</label
+            >
+            <input
+              class="tickets__form--informacionPersonal"
+              type="text"
+              id="nombre"
+              placeholder="Nombre"
+            />
+          </div>
+          <div>
+            <label class="tickets__form--nombreCampo" for="apellidos"
+              >Apellidos: *
+            </label>
+            <input
+              class="tickets__form--informacionPersonal"
+              type="text"
+              id="apellidos"
+              placeholder="Apellidos"
+            />
+          </div>
+          <div>
+            <label class="tickets__form--nombreCampo" for="correo electrónico"
+              >Correo Electrónico: *
+            </label>
+            <input
+              type="text"
+              class="tickets__form--informacionPersonal"
+              id="correo electrónico"
+              placeholder="E-mail"
+            />
+          </div>
+          <div>
+            <label class="tickets__form--nombreCampo" for="teléfono"
+              >Teléfono:</label
+            >
+            <input
+              class="tickets__form--informacionPersonal"
+              type="text"
+              id="teléfono"
+              placeholder="Teléfono de contacto"
+            />
+          </div>
+          <div>
+            <label class="tickets__form--nombreCampo" for="fecha de nacimiento"
+              >Fecha de Nacimiento: *</label
+            >
+            <input
+              type="date"
+              id="fecha de nacimiento"
+              class="tickets__form--informacionPersonal"
+            />
+          </div>
         </fieldset>
-        <fieldset>
+        <fieldset class="tickets__form--fieldset">
           <legend>Tipo de Entrada</legend>
           <p>
             Elige el tipo de entrada que prefieres para tu experiencia en el
             Amped Festival. Cada opción ha sido diseñada para proporcionarte el
             mejor acceso y comodidades durante el evento.
           </p>
-          <label for="tickets"
+          <label for="tipo de entrada"
             >Selecciona tu Entrada:
-            <select name="tickets" id="tickets">
-              <option value="generalTicket">Entrada General - 50€</option>
-              <option value="vipTicket">
+            <select name="tickets" id="tipo de entrada">
+              <option value="entrada general">Entrada General - 50€</option>
+              <option value="entrada vip">
                 Entrada VIP - 150€ (incluye acceso backstage y zona
                 preferencial)
               </option>
-              <option value="twoDaysTicket">Pase de dos Días - 120€</option>
+              <option value="pase dos días">Pase de dos Días - 120€</option>
             </select>
           </label>
         </fieldset>
-        <fieldset>
+        <fieldset class="tickets__form--fieldset">
           <legend>Método de Pago</legend>
-          <label for="">
-            <input type="radio" />
+          <label for="método de pago">
+            <input type="radio" id="método de pago" />
             Paypal
-            <input type="radio" />
+            <input type="radio" id="método de pago" />
             Tarjeta de Crédito
-            <input type="radio" />Bizum
+            <input type="radio" id="método de pago" />Bizum
           </label>
         </fieldset>
-        <fieldset>
+        <fieldset class="tickets__form--fieldset">
           <legend>Información de Tarjeta</legend>
-          <label for=""
+          <label for="número de tarjeta"
             >Número de tarjeta de crédito/débito:
-            <input type="text" placeholder="1234123412341234" />
+            <input
+              type="text"
+              id="número de tarjeta"
+              placeholder="1234123412341234"
+            />
           </label>
-          <label for=""
+          <label for="fecha de expiración"
             >Fecha de Expiración:
-            <input type="text" />
+            <input type="text" id="fecha de expiración" />
           </label>
-          <label for=""
+          <label for="cvc"
             >CVC:
-            <input type="text" placeholder="123" />
+            <input type="text" id="cvc" placeholder="123" />
           </label>
         </fieldset>
-        <fieldset>
+        <fieldset class="tickets__form--fieldset">
           <legend>Dirección de Envío</legend>
-          <label for=""
+          <label for="dirección"
             >Dirección: *
-            <input type="text" name="" id="" placeholder="Dirección" />
+            <input
+              type="text"
+              id="dirección"
+              name="dirección"
+              placeholder="Dirección"
+            />
           </label>
-          <label for=""
+          <label for="población"
             >Población: *
-            <input type="text" name="" id="" placeholder="Población" />
+            <input
+              type="text"
+              id="población"
+              name="población"
+              placeholder="Población"
+            />
           </label>
-          <label for=""
+          <label for="país"
             >País:
-            <select name="country" id="country">
-              <option value="Spain">España</option>
+            <select name="país" id="país">
+              <option value="España">España</option>
             </select>
           </label>
         </fieldset>
-        <fieldset>
+        <fieldset class="tickets__form--fieldset">
           <legend>Comentarios o Peticiones Especiales</legend>
-          <textarea cols="134" rows="5"></textarea>
+          <textarea cols="125" rows="5"></textarea>
         </fieldset>
-        <fieldset>
+        <fieldset class="tickets__form--fieldset">
           <legend>Términos y condiciones y la política de privacidad</legend>
-          <label for="">
-            <input type="checkbox" name="" id="" />He leído y acepto los
-            <a href="">términos y condiciones</a> y la
+          <label for="términos y condiciones y política de privacidad">
+            <input
+              type="checkbox"
+              name="términos y condiciones y política de privacidad"
+              id="términos y condiciones y política de privacidad"
+            />He leído y acepto los <a href="">términos y condiciones</a> y la
             <a href="">política de privacidad.</a>
           </label>
         </fieldset>
-        <button type="submit">Comprar Entrada</button>
+        <button class="comprarEntrada" type="submit">Comprar Entrada</button>
       </form>
     </main>
     <footer id="footer">
