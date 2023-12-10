@@ -128,3 +128,21 @@ a:link, a:visited {
     height: 1px;
     background-color: #a4f479;
 }
+#footer{
+    color: rgb(255,255,255);
+    background-color: #070e58;
+    font-weight: 300;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 15%;
+}
+.footer__list{
+    font-size: 18px;
+    display: flex;
+    gap: 20px;
+}
+.footer__credits{
+    font-size: 12px;
+    padding: 10px 0 10px 0;
+}
