@@ -1,3 +1,23 @@
+@font-face {
+    font-family: Fira Sans;
+    src: url(/Fira_Sans/FiraSans-Light.ttf);
+    font-weight: 300;
+}
+@font-face {
+    font-family: Fira Sans;
+    src: url(/Fira_Sans/FiraSans-Medium.ttf);
+    font-weight: 500;
+}
+@font-face {
+    font-family: Fira Sans;
+    src: url(/Fira_Sans/FiraSans-Bold.ttf);
+    font-weight: 700;
+}
+@font-face {
+    font-family: Fira Sans;
+    src: url(/Fira_Sans/FiraSans-Black.ttf);
+    font-weight: 900;
+}
 *{
     list-style: none;
     padding: 0;
@@ -5,7 +25,10 @@
   }
 a:link, a:visited { 
     text-decoration: none;
-    color: black;
+    color: white;
+  }
+  a:hover{
+    color: #a4f479;
   }
 .body__index{
     background-image: url(/img/home-hero.jpg);
@@ -13,4 +36,31 @@ a:link, a:visited {
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
+}
+.index__navbar{
+    background-color: rgba(7, 14, 88, 0.7);
+    margin: 15px 33% 15px 33%;
+    padding: 20px 45px 20px 45px;
+    font-family: Fira Sans, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: white;
+}
+.index__navbar--list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.ampedFestival__logo--index{
+    width: 34%;
+    height: 34%;
+    margin: 7vh 33% 15px 33%;
+}
+.ampedFestival__slogan{
+    color: white;
+    font-family: Fira Sans, sans-serif;
+    font-weight: 900;
+    font-size: 80px;
+    text-align: center;
+    margin: 15px 15% 15px 15%;
 }
