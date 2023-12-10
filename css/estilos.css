@@ -80,3 +80,51 @@ a:link, a:visited {
     text-align: center;
     font-size: 15px;
 }
+#header{
+    background-image: url(/img/amped_header.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 20vh;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.header__navbar{
+    background-color: rgba(7, 14, 88, 0.7);
+    margin: 0 33% 0 33%;
+    padding: 10px 45px 20px 45px;
+    font-weight: 500;
+    font-size: 18px;
+    color: #FFF;
+}
+.ampedFestival__logo--header{
+    width: 100%;
+    height: 70px;
+    margin-bottom: 10px;
+}
+.tickets__navbar--list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.header__navbar--list,
+.header__navbar--list:link,
+.header__navbar--list:visited {
+    /* seleccionamos todas las opciones para que aparezca siempre en verde */
+    color: #a4f479; 
+    position: relative;
+}
+.header__navbar--list::after {
+    /* indica el contenido del pseudoelemento */
+    content: "";
+    position: absolute;
+    /* Alinea el subrayado desde el borde izquierdo */
+    left: 0;
+    /* espacio entre el texto y la linea */
+    bottom: -5px;
+    width: 100%;
+    /* grosor de la linea */
+    height: 1px;
+    background-color: #a4f479;
+}
