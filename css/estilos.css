@@ -1,0 +1,16 @@
+*{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+a:link, a:visited { 
+    text-decoration: none;
+    color: black;
+  }
+.body__index{
+    background-image: url(/img/home-hero.jpg);
+    background-size: 100% 1500px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+}
