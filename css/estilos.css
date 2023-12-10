@@ -22,6 +22,7 @@
     list-style: none;
     padding: 0;
     margin: 0;
+    font-family: Fira Sans, sans-serif;
   }
 a:link, a:visited { 
     text-decoration: none;
@@ -41,7 +42,6 @@ a:link, a:visited {
     background-color: rgba(7, 14, 88, 0.7);
     margin: 15px 33% 15px 33%;
     padding: 20px 45px 20px 45px;
-    font-family: Fira Sans, sans-serif;
     font-weight: 500;
     font-size: 20px;
     color: #FFF;
@@ -58,9 +58,25 @@ a:link, a:visited {
 }
 .ampedFestival__slogan{
     color: #FFF;
-    font-family: Fira Sans, sans-serif;
     font-weight: 900;
     font-size: 80px;
     text-align: center;
     margin: 15px 15% 15px 15%;
+}
+.index__footer{
+    margin: 50px 33% 15px 33%;
+    font-weight: 500;
+    color: #FFF;
+}
+.index__footer--list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 17px;
+}
+.index__footer--credits{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 15px;
 }
